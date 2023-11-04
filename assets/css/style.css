@@ -64,8 +64,16 @@ input:valid {
     color: black;
 }
 
+input:valid + p {
+    display: none;
+}
+
 input:invalid {
     color: red;
+}
+
+input:invalid + p + .p2 {
+    display: none;
 }
 
 @media (max-width: 600px) {
